@@ -9,23 +9,6 @@ a:hover {
   color: #fff;
 }
 
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-
-  font-family: "Arial black";
-  font-size: 25px;
-}
-.btn-secondary:hover{
-  background-color: lightgray;
-  border: .05rem solid lightgray;
-
-}
-
 .btn-primary,
 .btn-primary:focus {
   color: #333;
@@ -44,9 +27,7 @@ a:hover {
 
 html,
 body {
-  height: 100%;
-    background-image: url("/static/copenhagen.jpg");
-  background-size:cover;
+  background-color: #9fbcc6;
 }
 
 body {
@@ -66,6 +47,11 @@ body {
 
 .cover-container {
   max-width: 42em;
+}
+
+.thankyou {
+  max-width: 100%;
+  height: auto;
 }
 
 /*
@@ -123,10 +109,6 @@ body {
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
-}
-
-.inner-cover-heading {
-  font-family: "Arial Black"; font-size: 80px;
 }
 
 /*

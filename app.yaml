@@ -2,19 +2,13 @@ runtime: go
 api_version: go1
 
 handlers:
-# [START gae_go_env_static_handlers]
-# If the path is empty, show static index.html file
-- url: /
-  static_files: index.html
-  upload: index.html
-  secure: always
-
+# #[START gae_go_env_static_handlers]
 # Otherwise, find file in static directory
 - url: /static
   static_dir: static
   secure: always
 
-# [END gae_go_env_static_handlers]  
+# #[END gae_go_env_static_handlers]  
 - url: /.*
   script: _go_app
   secure: always
